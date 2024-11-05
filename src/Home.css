@@ -1,0 +1,350 @@
+.card {
+    border: 10px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+.container {
+    max-width: 1200px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding */
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%; /* Adjust as needed */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+.outer-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the containers */
+    margin: 10px; /* Add margin for spacing */
+}
+
+.text-container, .info-container {
+    flex: 1; /* Allow both containers to grow equally */
+    margin: 10px; /* Add margin between the containers */
+    padding: 5px; /* Optional padding */
+    background-color: #f9f9f9; /* Optional background color */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Optional: Set a minimum width for better responsiveness */
+.text-container {
+    min-width: 10px; /* Adjust as needed */
+}
+
+.info-container {
+    min-width: 150px; /* Adjust as needed */
+}
+.styled-button {
+    background-color: #007bff; /* Button background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.styled-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.inviting-text {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Text color */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add margin for spacing */
+    padding: 10px; /* Optional padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.info-container {
+    padding: 20px; /* Optional padding */
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* Space between grid items */
+}
+
+.images img {
+    width: 100%; /* Full width of the grid cell */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text-container {
+    flex: 2;
+}
+
+.title {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.heading {
+    font-size: 24px;
+    color: #333;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+.journeys-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Creates three equal columns */
+    gap: 2px; /* Space between grid items */
+}
+
+.new-container, .new2-container, .new3-container {
+    grid-row: span 3; /* Makes these sections span all three columns */
+}
+
+.journey {
+    margin: 3px 0; /* Space between each journey item */
+}
+
+.progress-bar {
+    width: 10%; /* Full width of the container */
+    height: 5px; /* Height of the progress bar */
+    margin-top: 2px; /* Space between heading and progress bar */
+    appearance: none; /* Remove default styling */
+    background-color: #e0e0e0; /* Background color */
+
+    /* For Webkit browsers */
+    &::-webkit-progress-bar {
+        background-color: #e0e0e0; /* Background color */
+    }
+
+    &::-webkit-progress-value {
+        background-color: #4cadaf; /* Fill color */
+    }
+
+    /* For Firefox */
+    &::-moz-progress-bar {
+        background-color: #4cadaf; /* Fill color */
+    }
+}
+
+.transport {
+    text-align: center; /* Center the text under images */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h4 {
+    color: #2c3e50;
+}
+
+.progress {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 20px;
+    background-color: #3498db;
+}
+
+.services-2 {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    padding: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #3498db;
+}
+
+.main-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+
+.places {
+    padding: 50px 0;
+}
+
+.main-title {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.grid {
+    margin-bottom: 30px;
+}
+
+.effect-zoe {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.effect-zoe img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.effect-zoe figcaption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.effect-zoe:hover figcaption {
+    opacity: 1;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.call-to-action {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+.form {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.map iframe {
+    border: none;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+.social-icons li {
+    display: inline;
+    margin: 0 10px;
+}
+.modal-body {
+    padding: 20px;
+}
+.booking-btn {
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Top/bottom and left/right padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.booking-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.booking-btn:focus {
+    outline: none; /* Remove default outline */
+}
